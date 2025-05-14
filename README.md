@@ -41,3 +41,10 @@ Secure-P2P-Messaging/
 ```bash
 pip install flask requests pycryptodome
 
+
+[Client A] ←→ [Serveur A P2P]               [Serveur B P2P] ←→ [Client B]
+     |                                              |
+     |----------(via Flask API)---------------------|
+              Serveur central (Flask)
+
+
