@@ -23,3 +23,21 @@ Secure-P2P-Messaging/
 ├── Flaskserver.py        # Serveur Flask (API REST) pour la gestion des requêtes
 ├── rsa_utils.py          # Utilitaires pour la gestion des clés RSA
 └── README.md             # Documentation du projet
+
+
+
+---
+
+## ⚙️ Prérequis
+
+- Python ≥ 3.8
+- Modules Python :
+  - `flask`
+  - `requests`
+  - `pycryptodome`
+
+### Installation
+
+```bash
+pip install flask requests pycryptodome
+
