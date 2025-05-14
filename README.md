@@ -58,21 +58,6 @@ Secure-P2P-Messaging/
   - `requests`
   - `pycryptodome`
 
-## 🤵🏽‍♂️ Route serveur
-
-```
-
-| Méthode | URL                          | Description                      |
-| ------: | ---------------------------- | -------------------------------- |
-|  `POST` | `/register`                  | Enregistrement                   |
-|  `POST` | `/login`                     | Connexion                        |
-|  `POST` | `/update_ip`                 | Mise à jour IP + port            |
-|  `POST` | `/add_friend`                | Demande d’ami                    |
-|  `POST` | `/accept_friend`             | Accepter une demande             |
-|   `GET` | `/get_ip/<username>`         | Obtenir IP/port d’un utilisateur |
-|   `GET` | `/get_public_key/<username>` | Obtenir la clé publique d’un ami |
-
-```
 
 ## 🔧 Améliorations prévues
 
