@@ -16,9 +16,10 @@ Secure P2P Messaging est une application de messagerie sécurisée et décentral
 
 ## 📁 Structure du projet
 
-Secure-P2P-Messaging-/
-├── P2PClient.py # Client P2P pour envoyer des messages
-├── P2PServer.py # Serveur P2P local pour recevoir les messages
-├── Flaskserver.py # Serveur Flask (API REST)
-├── rsa_utils.py # Outils pour les clés RSA
-├── README.md # Documentation
+Secure-P2P-Messaging/
+│
+├── P2PClient.py          # Client P2P pour l'envoi de messages sécurisés
+├── P2PServer.py          # Serveur P2P local pour la réception des messages
+├── Flaskserver.py        # Serveur Flask (API REST) pour la gestion des requêtes
+├── rsa_utils.py          # Utilitaires pour la gestion des clés RSA
+└── README.md             # Documentation du projet
