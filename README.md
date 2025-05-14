@@ -36,10 +36,9 @@ Secure-P2P-Messaging/
   - `requests`
   - `pycryptodome`
 
-### Installation
+## 🤵🏽‍♂️ Route serveur
 
-```bash
-pip install flask requests pycryptodome
+```
 
 | Méthode | URL                          | Description                      |
 | ------: | ---------------------------- | -------------------------------- |
