@@ -41,10 +41,15 @@ Secure-P2P-Messaging/
 ```bash
 pip install flask requests pycryptodome
 
+| Méthode | URL                          | Description                      |
+| ------: | ---------------------------- | -------------------------------- |
+|  `POST` | `/register`                  | Enregistrement                   |
+|  `POST` | `/login`                     | Connexion                        |
+|  `POST` | `/update_ip`                 | Mise à jour IP + port            |
+|  `POST` | `/add_friend`                | Demande d’ami                    |
+|  `POST` | `/accept_friend`             | Accepter une demande             |
+|   `GET` | `/get_ip/<username>`         | Obtenir IP/port d’un utilisateur |
+|   `GET` | `/get_public_key/<username>` | Obtenir la clé publique d’un ami |
 
-[Client A] ←→ [Serveur A P2P]               [Serveur B P2P] ←→ [Client B]
-     |                                              |
-     |----------(via Flask API)---------------------|
-              Serveur central (Flask)
 
 
