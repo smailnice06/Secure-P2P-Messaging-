@@ -12,6 +12,30 @@ Secure P2P Messaging est une application de messagerie sécurisée et décentral
 
 ---
 
+## 🔄 Fonctionnement du projet
+
+```
+
+          [Alice]                                [Bob]
+             |                                     |
+             |         📡 Demande d'IP de Bob       |
+             |────────▶ Serveur central ◀───────────|
+             |         📡 Envoie son IP à Alice     |
+             |                                     |
+     (Échange P2P direct établi grâce aux IPs récupérées)
+             |                                     |
+             |=========== Connexion TCP ===========|
+             |                                     |
+             |        🔐 Échange de clés publiques   |
+             | <─────────────────────────────────> |
+             |                                     |
+             |        💬 Échange de messages         |
+             | <─────────────────────────────────> |
+             |    (chiffrés avec les clés RSA)     |
+
+
+```
+
 ## 📁 Structure du projet
 
 ```
