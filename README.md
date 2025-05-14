@@ -59,3 +59,10 @@ Secure-P2P-Messaging/
 - Authentification 2FA ou via clé publique
 - Base de données sécurisée
 - Transfert de fichiers entre pairs
+
+## 📄 Licence
+
+Ce projet est disponible gratuitement sous la licence **Secure P2P Messaging License (Non-Commercial)**.  
+Toute utilisation commerciale est strictement interdite sans l'autorisation explicite de l’auteur.  
+Voir le fichier [LICENSE](./LICENSE) pour plus d'informations.
+
