@@ -1,5 +1,3 @@
-# Secure-P2P-Messaging-
-
 # 🔐 Secure P2P Messaging
 
 Secure P2P Messaging est une application de messagerie sécurisée et décentralisée développée en Python. Elle permet à deux utilisateurs de discuter directement en pair-à-pair (P2P), sans intermédiaire, tout en assurant la confidentialité grâce au chiffrement RSA.
