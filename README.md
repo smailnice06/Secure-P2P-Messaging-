@@ -109,6 +109,76 @@ Secure-P2P-Messaging/
 └── README.md             # Documentation du projet
 ```
 
+## 🔹 Diagramme de blocs internes
+
+```
++-------------------------------------------------------------+
+|                     [Secure P2P Messaging System]           |
+|-------------------------------------------------------------|
+|                                                             |
+|   +----------------+        +----------------+             |
+|   |   Client A     |        |   Client B     |             |
+|   |----------------|        |----------------|             |
+|   | - RSA keys     |        | - RSA keys     |             |
+|   | - TCP Server   |<------>|- TCP Client    |             |
+|   | - Flask API    |        | - Flask API    |             |
+|   +--------|-------+        +--------|-------+             |
+|            |                         |                     |
+|            v                         v                     |
+|       +----------------------------------------+           |
+|       |             Flask Server               |           |
+|       |----------------------------------------|           |
+|       | - SQLite DB (users, IPs, friends)      |           |
+|       | - REST API:                            |           |
+|       |    • /register                          |           |
+|       |    • /login                             |           |
+|       |    • /get_ip                            |           |
+|       |    • /add_friend                        |           |
+|       +----------------------------------------+           |
+|                                                             |
++-------------------------------------------------------------+
+
+```
+
+## 🔹 Diagramme de cas d'utilisation
+
+```
+                 [Utilisateur]
+                      |
+     +----------------+----------------+
+     |                                 |
+ [S'enregistrer]                [Se connecter]
+     |                                 |
+ [Ajouter un ami]               [Envoyer un message]
+     |                                 |
+[Obtenir IP d'un ami]   <------>  [Échanger des messages P2P]
+                                          |
+                               [Chiffrer/Déchiffrer avec RSA]
+```
+
+## 🔹 Diagramme de séquence — Envoi d’un message sécurisé
+
+```
+Client A         Flask Server         Client B
+   |                  |                  |
+   | --- Auth ---     |                  |
+   |--> /login ------>|                  |
+   |<-- 200 OK -------|                  |
+   |                  |                  |
+   |--- get friend IP (B) -------------->|
+   |--> /get_ip(B) --->|                 |
+   |<-- IP:port B -----|                 |
+   |                  |                  |
+   |-- TCP connect to B ---------------->|
+   |                  |<---- Accept ----|
+   |-- Request public key -------------->|
+   |<-- Public key B --------------------|
+   |-- Encrypt message with B key ------>|
+   |-- Send encrypted message ---------->|
+   |                  |<-- Decrypt with private key |
+   |                  |-- Show message to user     |
+   |                  |                  |
+```
 
 ---
 
