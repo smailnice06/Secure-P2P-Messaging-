@@ -180,6 +180,21 @@ Client A         Flask Server         Client B
    |                  |                  |
 ```
 
+
+---
+
+
+[Carte mentale – Secure P2P Messaging-1.pdf](https://github.com/user-attachments/files/20225859/Carte.mentale.Secure.P2P.Messaging-1.pdf)
+
+
+
+
+
+
+
+
+
+
 ---
 
 ## ⚙️ Prérequis
