@@ -183,15 +183,7 @@ Client A         Flask Server         Client B
 
 ---
 
-
-[Carte mentale – Secure P2P Messaging-1.pdf](https://github.com/user-attachments/files/20225859/Carte.mentale.Secure.P2P.Messaging-1.pdf)
-
-
-
-
-
-
-
+<img width="1407" alt="Capture d’écran 2025-05-15 à 11 50 26" src="https://github.com/user-attachments/assets/063cc722-ecaf-4c4d-ae0b-f487521ecf8a" />
 
 
 
